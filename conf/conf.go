@@ -9,6 +9,7 @@ var (
 	LogFlag  int
 
 	// console
+	ConsoleAddr string
 	ConsolePort   int
 	ConsolePrompt string = "Leaf# "
 	ProfilePath   string
