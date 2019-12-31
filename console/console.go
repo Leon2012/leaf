@@ -18,9 +18,9 @@ func Init() {
 
 	server = new(network.TCPServer)
 	if (conf.ConsoleAddr == "") {
-		server.Addr = conf.ConsoleAddr
-	}else{
 		server.Addr = "localhost:" + strconv.Itoa(conf.ConsolePort)	
+	}else{
+		server.Addr = conf.ConsoleAddr
 	}
 	server.MaxConnNum = int(math.MaxInt32)
 	server.PendingWriteNum = 100
